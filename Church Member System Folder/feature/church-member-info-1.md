@@ -1,18 +1,16 @@
 # Feature: Church member information Data base
 
-**Feature ID:** 1  
-**Branch pattern:** `feature/church-member-info`  
+## **Feature ID:** 1
+
+**Branch pattern:** `feature/church-member-info-1`  
 **Status:** Ready  
 **Created:** 2026-9-19  
 **Input:** A Data base that can keep all of a members inforamtion for a church.  
-**Depends on:** [Feature X — …](feature-X-….md)  
-**Related:** optional links to ADRs or reference docs  
-
----
+**Depends on:** `/van-routes-22.md` `/accouncement-system-3`
 
 ## User Stories
 
-### US-N.1: Church members access to their information
+### US-1.1: Church members access to their information
 
 **As a church member**  
 **I want to be able to talk to a church leader or go in myself and add or change my information in the data base**  
@@ -22,7 +20,7 @@
 **Independent test:** The church needs a better way to organize there church member information  
 **Acceptance scenarios:** see US-N.1 under Acceptance Criteria
 
-### US-N.2: Church leaders filling in attendance
+### US-1.2: Church leaders filling in attendance
 
 **As a church leader**  
 **I want to be able to easly mark someone as at church or not, just by having there name**  
@@ -55,7 +53,7 @@
 
 
 
-### `Info_table` table
+### `info` table
 
 
 | Field                 | Type   | Rules          |
@@ -81,7 +79,7 @@
 
 
 
-### US-N.1 — Church member access to their information
+### US-1.1 — Church member access to their information
 
 
 
@@ -102,7 +100,7 @@
 
 
 
-### US-N.2 — Church leaders filling in attendance
+### US-1.2 — Church leaders filling in attendance
 
 
 
