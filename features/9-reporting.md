@@ -73,7 +73,7 @@
 
 
 
-### `table_name` table
+### `reporting_table` table
 
 
 | Field            | Type       | Rules                                |

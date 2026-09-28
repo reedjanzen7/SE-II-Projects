@@ -1,10 +1,10 @@
-# Feature: 
+# Feature:
 
-**Feature ID:** N  
-**Branch pattern:** `feature/N-`  
+**Feature ID:** 7  
+**Branch pattern:** `feature/7-restocking`  
 **Status:** Draft  
-**Created:** 9/20/2026  
-**Input:** One sentence — what this feature is for (intent, not technology)  
+**Created:** 9/28/2026  
+**Input:** This feature is how employees restock the warehouse, it can be dome manually or automatically.
 **Depends on:** [Feature X — …](feature-X-….md)  
 **Related:** optional links to ADRs or reference docs  
 
@@ -12,21 +12,21 @@
 
 ## User Stories
 
-### US-N.1: Short title
+### US-7.1: Automatic Restock
 
-**As a**   
-**I want to**   
-**So that** 
+**As a** item 
+**I want to** automatically notify the supplier for more of an item if inventory amount + quantity on order is less than the items set minium
+**So that** the warehouse won't run out of inventory
 
 **Priority:** P1  
 **Independent test:** <how to verify this story alone, in one sentence>  
 **Acceptance scenarios:** see ### US-N.1 under Acceptance Criteria
 
-### US-N.2: Short title
+### US-7.2: Manaully Restock
 
-**As a**   
-**I want to**   
-**So that** 
+**As a** warehouse manager 
+**I want to** be able to easly notify a supplier for more of an item
+**So that** the warehouse won't run out of inventory
 
 **Priority:** P1  
 **Independent test:** <how to verify this story alone, in one sentence>  
@@ -47,6 +47,8 @@
 - **FR-003**: … MUST NOT …
 
 ---
+
+
 
 ## Key Entities
 
@@ -84,7 +86,7 @@
 
 
 
-### US-N.1 — Short title (same as the story)
+### US-7.1: Automatic Restock
 
 
 
@@ -93,7 +95,7 @@
 - **Given** 
 - **When** 
 - **Then** 
-- **And** 
+- **And**
 
 
 
@@ -105,7 +107,7 @@
 
 
 
-### US-N.2 — Short title (same as the story)
+### US-7.2: Manaully Restock
 
 
 
