@@ -4,9 +4,8 @@
 **Branch pattern:** `feature/3-suppliers`  
 **Status:** Draft  
 **Created:** 9/25/2026  
-**Input:** One sentence — This feature is the Supplier which allows them to manage the orders they send to the warehouse.  
-**Depends on:** [Feature X — …](feature-X-….md)  
-**Related:** optional links to ADRs or reference docs  
+**Input:** This feature is the Supplier which allows them to manage the orders they send to the warehouse.  
+**Depends on:** [Feature 4 — Supplier Order Form](4-supplier-order-form.md)  
 
 ---
 
@@ -20,7 +19,7 @@
 
 **Priority:** P1  
 **Independent test:** <how to verify this story alone, in one sentence>  
-**Acceptance scenarios:** see ### US-N.1 under Acceptance Criteria
+**Acceptance scenarios:** see US-3.1 under Acceptance Criteria
 
 ### US-3.2: Filling out form
 
@@ -30,7 +29,7 @@
 
 **Priority:** P1  
 **Independent test:** <how to verify this story alone, in one sentence>  
-**Acceptance scenarios:** see ### US-N.2 under Acceptance Criteria
+**Acceptance scenarios:** see US-3.2 under Acceptance Criteria
 
 ### US-3.3: Order Recieved
 
@@ -40,7 +39,7 @@
 
 **Priority:** P1  
 **Independent test:** <how to verify this story alone, in one sentence>  
-**Acceptance scenarios:** see ### US-N.2 under Acceptance Criteria
+**Acceptance scenarios:** see US-3.2 under Acceptance Criteria
 
 ---
 
@@ -64,8 +63,8 @@
 
 ## Key Entities
 
-- **Entity**: short description; relationships in plain language
-- **Entity**: …
+- **Supplier**: the compainy who supplies items for the warehouse
+- **Supplier Form**: The form that supplier fills out 
 
 ---
 

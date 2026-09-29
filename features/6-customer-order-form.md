@@ -4,9 +4,8 @@
 **Branch pattern:** `feature/6-customer-order-form`  
 **Status:** Draft  
 **Created:** 9/25/2026  
-**Input:** One sentence — This feature is the the form that the customer will fill out when creating an order and gets put into data base.
-**Depends on:** [Feature X — …](feature-X-….md)  
-**Related:** optional links to ADRs or reference docs  
+**Input:** This feature is the the form that the customer will fill out when creating an order and gets put into data base.
+**Depends on:** [Feature 5 — Customers](5-customers.md)    
 
 ---
 
@@ -20,7 +19,7 @@
 
 **Priority:** P1  
 **Independent test:** <how to verify this story alone, in one sentence>  
-**Acceptance scenarios:** see ### US-N.2 under Acceptance Criteria
+**Acceptance scenarios:** see US-6.2 under Acceptance Criteria
 
 ### US-6.2: Receiving form
 
@@ -30,7 +29,7 @@
 
 **Priority:** P1  
 **Independent test:** <how to verify this story alone, in one sentence>  
-**Acceptance scenarios:** see ### US-N.2 under Acceptance Criteria
+**Acceptance scenarios:** see US-6.2 under Acceptance Criteria
 
 ### US-6.3: Form History
 
@@ -40,7 +39,7 @@
 
 **Priority:** P1  
 **Independent test:** <how to verify this story alone, in one sentence>  
-**Acceptance scenarios:** see ### US-N.2 under Acceptance Criteria
+**Acceptance scenarios:** see US-6.2 under Acceptance Criteria
 
 ### US-6.4: Form Authorized
 
@@ -50,7 +49,7 @@
 
 **Priority:** P1  
 **Independent test:** <how to verify this story alone, in one sentence>  
-**Acceptance scenarios:** see ### US-N.2 under Acceptance Criteria
+**Acceptance scenarios:** see US-6.2 under Acceptance Criteria
 
 ---
 
@@ -72,8 +71,8 @@
 
 ## Key Entities
 
-- **Entity**: short description; relationships in plain language
-- **Entity**: …
+- **Customer**: the compainy who buys items form the warehouse
+- **Customer Form**: The form that customer fills out 
 
 ---
 

@@ -5,8 +5,7 @@
 **Status:** Draft  
 **Created:** 9/25/2026  
 **Input:** One sentence — This is a feature for the reports that need to get sent back to the manager.  
-**Depends on:** [Feature X — …](feature-X-….md)  
-**Related:** optional links to ADRs or reference docs  
+**Depends on:** [Feature 4 — Supplier Order Form](4-supplier-order-form.md), [Feature 3 — Suppliers](3-suppliers.md) 
 
 ---
 
@@ -62,8 +61,7 @@
 
 ## Key Entities
 
-- **Entity**: short description; relationships in plain language
-- **Entity**: …
+- **Employees**: The group of people who work at the warehouse; they help send in the reports
 
 ---
 

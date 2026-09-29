@@ -4,9 +4,8 @@
 **Branch pattern:** `feature/2-item`  
 **Status:** Draft  
 **Created:** 9/25/2026  
-**Input:** One sentence — This feature is used for keeping track of the Warehouses items, like viewing and editing items.  
-**Depends on:** [Feature X — …](feature-X-….md)  
-**Related:** optional links to ADRs or reference docs  
+**Input:** This feature is used for keeping track of the Warehouses items, like viewing and editing items.  
+**Depends on:** [Feature 1 — Inventory](1-inventory.md)  
 
 ---
 
@@ -72,8 +71,8 @@
 
 ## Key Entities
 
-- **Entity**: short description; relationships in plain language
-- **Entity**: …
+- **Items**: The thing that is sold in the warehouse; the inventory is fulled of them.
+- **Item Locations**: The loaction of where an item is in the warehouse; it allows the user to know where it is in the warehouse.
 
 ---
 

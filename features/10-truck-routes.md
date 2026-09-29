@@ -4,43 +4,42 @@
 **Branch pattern:** `feature/10-truck-routes`  
 **Status:** Draft  
 **Created:** 9/25/2026  
-**Input:** One sentence —   
-**Depends on:** [Feature X — …](feature-X-….md)  
-**Related:** optional links to ADRs or reference docs  
+**Input:** This is the truck driver / truck route feature that has all the information for deilveries
+**Depends on:** [Feature 11 — Employees](11-employees.md)
 
 ---
 
 ## User Stories
 
-### US-1.1: Adding Stop
+### US-10.1: Having a List of Customer
 
-**As a**  
-**I want to**  
-**So that**
-
-**Priority:** P1  
-**Independent test:** <how to verify this story alone, in one sentence>  
-**Acceptance scenarios:** see ### US-N.1 under Acceptance Criteria
-
-### US-1.2: Deleting Item
-
-**As a**  
-**I want to**  
-**So that**
+**As a** truck driver
+**I want to** have a list of customers
+**So that** I know where to drive
 
 **Priority:** P1  
-**Independent test:** <how to verify this story alone, in one sentence>  
-**Acceptance scenarios:** see ### US-N.2 under Acceptance Criteria
+**Independent test:** Truck drivers need to know who and where they are deilvering too  
+**Acceptance scenarios:** see US-10.1 under Acceptance Criteria
 
-### US-1.3: Editing Item
+### US-10.2: List of Addresses in Route Order
 
-**As a**  
-**I want to**  
-**So that**
+**As a** truck driver
+**I want to** have a list of address in the most effiectent order to deilver them in 
+**So that** I can finish the order quickly
 
 **Priority:** P1  
-**Independent test:** <how to verify this story alone, in one sentence>  
-**Acceptance scenarios:** see ### US-N.2 under Acceptance Criteria
+**Independent test:** Customers need to get their items quick, and truck drivers should get the deilveries done quick
+**Acceptance scenarios:** see US-10.2 under Acceptance Criteria
+
+### US-10.3: Creating the most Effective Truck Route
+
+**As a** warehouse system
+**I want to** create the most effective trucking route
+**So that** deilveries go fast
+
+**Priority:** P1  
+**Independent test:**  Customers need to get their items quick, and truck drivers should get the deilveries done quick
+**Acceptance scenarios:** see US-10.2 under Acceptance Criteria
 
 ---
 
@@ -52,9 +51,8 @@
 
 ### Functional Requirements
 
-- **FR-001**: System MUST …
-- **FR-002**: Users MUST be able to …
-- **FR-003**: … MUST NOT …
+- **FR-001**: System MUST create the most effective trucking route
+- **FR-002**: Truck driver MUST be able to see the most effective trucking route
 
 ---
 
@@ -62,8 +60,7 @@
 
 ## Key Entities
 
-- **Entity**: short description; relationships in plain language
-- **Entity**: …
+- **Routes**: A group of addresses that create a route; the path the truck drivers follow.
 
 ---
 
@@ -73,20 +70,22 @@
 
 
 
-### `table_name` table
+### `truck_route_info` table
 
 
 | Field | Type       | Rules          |
 | ----- | ---------- | -------------- |
-| `id`  | INTEGER PK | Auto-increment |
-| `…`   | …          | …              |
+| `route_id`  | INTEGER PK | Auto-increment |
+| `route`   | Address Array          | List of address in most effective route             |
+| `trucker_name`   | Name     | Name of the truck driver who route is assigned too             |
 
 
 
 
-### Associations (if known)
+### Associations
 
-- …
+- 4-supplier-order-form
+- 6-customer-order-form
 
 ---
 
@@ -96,42 +95,63 @@
 
 
 
-### US-1.1: Item Picking
+### US-10.1: Having a List of Customer
 
 
 
-#### Scenario: Descriptive name (happy path)
+#### Scenario: Truck driver departs
 
-- **Given** 
-- **When** 
-- **Then** 
-- **And**
-
-
-
-#### Scenario: Descriptive name (failure / edge)
-
-- **Given** …
-- **When** …
-- **Then** …
+- **Given** truck driver departs on route
+- **When** the look at the data base
+- **Then** they can see the most effective route for them to follow
+- **And** then they can map on a mapi=ping deivice
 
 
 
-### US-2.2: Item Damanged
+#### Scenario: Customer cancels
+
+- **Given** a customer cancels an order
+- **When** the truck driver gets it
+- **Then** they skip that location
 
 
 
-#### Scenario: Descriptive name (happy path)
-
-- **Given** …
-- **When** …
-- **Then** …
+### US-10.2: List of Addresses in Route Order
 
 
 
-#### Scenario: Descriptive name (failure / edge)
+#### Scenario: Truck driver departs
 
-- **Given** …
-- **When** …
-- **Then** …
+- **Given** truck driver departs on route
+- **When** the look at the data base
+- **Then** they can see the most effective route for them to follow
+- **And** then they can map on a mapi=ping deivice
 
+
+
+#### Scenario: Customer cancels
+
+- **Given** a customer cancels an order
+- **When** the truck driver gets it
+- **Then** they skip that location
+
+
+
+### US-10.3: Creating the most Effective Truck Route
+
+
+
+#### Scenario: Truck driver departs
+
+- **Given** truck driver departs on route
+- **When** the look at the data base
+- **Then** they can see the most effective route for them to follow
+- **And** then they can map on a mapi=ping deivice
+
+
+
+#### Scenario: Customer cancels
+
+- **Given** a customer cancels an order
+- **When** the truck driver gets it
+- **Then** they skip that location
