@@ -1,10 +1,10 @@
-# Feature: <Human-readable title>
+# Feature: Maintaining Leagues
 
 **Feature ID:** 2  
 **Branch pattern:** `features/2-maintain-leagues`  
 **Status:** Draft  
 **Created:** 10/20/2026  
-**Input:** One sentence — what this feature is for (intent, not technology)  
+**Input:** This feature is for maintaining the league information on the systems website.
 **Depends on:** [Feature X — …](feature-X-….md)  
 **Related:** optional links to ADRs or reference docs  
 
@@ -60,7 +60,7 @@
 
 ## Data Model Requirements
 
-### `sport_table` table
+### `leagues_table` table
 | Field | Type | Rules |
 |-------|------|-------|
 | `league_id` | INTEGER PK | Auto-increment |
@@ -68,11 +68,13 @@
 | `league_name` | String | Added upon creation |
 | `league_description` | String | Added upon creation |
 | `leagues_sport` | String | Added upon creation |
+| `leagues_current_session` | Season | edited upon seasons creation |
+| `active` | bool | if they thing is active or not |
 
 
 ## Acceptance Criteria
 
-### US-1.1 — Adding a League
+### US-2.1 — Adding a League
 
 #### Scenario: League added successfully
 *   **Given** a new league is being added to the website
@@ -84,7 +86,7 @@
 *   **When** a user goes to the website
 *   **Then** they can't add a league
 
-### US-1.2 — Editing a League
+### US-2.2 — Editing a League
 
 #### Scenario: league edited successfully
 *   **Given** a league needs to have information updated on the website
@@ -96,7 +98,7 @@
 *   **When** a user goes to the website
 *   **Then** they can't edit the league
 
-### US-1.3 — De-activating League
+### US-2.3 — De-activating League
 
 #### Scenario: league is no longer happening
 *   **Given** a league is not is season or isn't happening

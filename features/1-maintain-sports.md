@@ -1,10 +1,10 @@
-# Feature: <Human-readable title>
+# Feature: Maintaining Sports
 
 **Feature ID:** 1  
 **Branch pattern:** `features/1-maintain-sports`  
 **Status:** Draft  
 **Created:** 10/20/2026  
-**Input:** One sentence — what this feature is for (intent, not technology)  
+**Input:** This feature is for maintaining the sport information on the systems website.
 **Depends on:** [Feature X — …](feature-X-….md)  
 **Related:** optional links to ADRs or reference docs  
 
@@ -66,6 +66,7 @@
 | `sports_leagues` | ArrayList of Laegues | Added when adding leagues |
 | `sport_name` | String | Added upon creation |
 | `sport_description` | String | Added upon creation |
+| `active` | bool | if they thing is active or not |
 
 
 ## Acceptance Criteria
