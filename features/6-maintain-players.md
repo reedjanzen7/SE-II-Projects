@@ -98,12 +98,12 @@
 
 ### US-6.3 — De-activating player
 
-#### Scenario: player is over
-*   **Given** a player is over
+#### Scenario: player isn't playing anymore
+*   **Given** a player is done player
 *   **When** the Team Managerr goes to the website
 *   **Then** they can de-activate a player
 
-#### Scenario: player is over not successfully
-*   **Given** a player is over
+#### Scenario: player de-activating a player not successfully
+*   **Given** a player is done player
 *   **When** a user goes to the website
 *   **Then** they can't de-activate a player
