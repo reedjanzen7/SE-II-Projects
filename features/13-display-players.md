@@ -5,8 +5,6 @@
 **Status:** Draft  
 **Created:** 10/21/2026  
 **Input:** This feature is for viewing a display of players.
-**Depends on:** [Feature X — …](feature-X-….md)  
-**Related:** optional links to ADRs or reference docs  
 
 ---
 

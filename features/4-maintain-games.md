@@ -5,8 +5,6 @@
 **Status:** Draft  
 **Created:** 10/20/2026  
 **Input:** This feature is for maintaining game information on the systems website.
-**Depends on:** [Feature X — …](feature-X-….md)  
-**Related:** optional links to ADRs or reference docs  
 
 ---
 
