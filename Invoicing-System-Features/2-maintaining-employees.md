@@ -1,6 +1,6 @@
-# Feature: maintaining the employee
+# Feature: maintaining employees
 
-**Feature ID:** 2               // not completed
+**Feature ID:** 2               // Should an employee be able to manage their own stuff?
 **Branch pattern:** `feature/2-mainaining-the-employees`  
 **Status:** Draft  
 **Created:** 11/23/2026 
@@ -45,7 +45,7 @@
 
 ### Functional Requirements
 
-- **FR-001**: System MUST be able to maintain the employee 
+- **FR-001**: System MUST be able to maintain the employees information 
 - **FR-002**: Employees MUST be able to view other employees information
 - **FR-003**: All users MUST NOT be able to maintain the employee information
 
@@ -69,7 +69,7 @@
 ## Success Criteria
 
 - **SC-001**: Every Gherkin scenario has at least one automated test before merge
-- **SC-002**: Only manager can access the page
+- **SC-002**: Only manager can access the page//
 
 ---
 
@@ -136,8 +136,8 @@
 
 ## Data Ownership
 
-- The companies information is maintained by the employee manager
-- employee manager must keep all the information up to date
+- The companies information is maintained by the company manager
+- company manager must keep all the information up to date
 
 ---
 
@@ -169,7 +169,7 @@
 - Managing information not listed in the table
 - Managing payment
 - Managing invoices
-- Managing employees
+- Managing the company
 - Managing customers
 
 ---

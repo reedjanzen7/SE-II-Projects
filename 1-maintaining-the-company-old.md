@@ -3,7 +3,7 @@
 **Feature ID:** N  
 **Branch pattern:** `feature/N-mainaining-the-company`  
 **Status:** Draft  
-**Created:** 11/23/2026 
+**Created:** 11/24/2026 
 **Input:** This feature for is mainaining the company of that runs the invoicing projects, so customers can see their info.
 **Depends on:** [Feature X — …](feature-X-….md)  
 **Related:** optional links to ADRs or reference docs  
