@@ -143,7 +143,7 @@
 
 ## API Requirements
 
-- The system MUST support information to be updated
+- The system MUST support information to be added
 - The system MUST support information to be edited
 - The system MUST support information to be archived
 - The system MUST limit only the manager to maintaining the companies information

@@ -154,7 +154,7 @@
 
 ## API Requirements
 
-- The system MUST support information to be updated
+- The system MUST support information to be added
 - The system MUST support information to be edited
 - The system MUST support information to be archived
 - The system MUST limit only to a clerk or high level to be able to maintain the customers information
