@@ -4,7 +4,7 @@
 **Branch pattern:** `feature/4-mainaining-projects`  
 **Status:** Draft  
 **Created:** 11/24/2026 
-**Input:** This feature for is mainaining the projects of that customers are paying the company to do.
+**Input:** This feature is for maintaining the projects of that customers are paying the company to do.
 **Depends on:** [Feature X — …](feature-X-….md)  
 **Related:** optional links to ADRs or reference docs  
 
@@ -83,7 +83,7 @@
 
 ## Data Model Requirements
 
-### `company_information` table
+### `project_information` table
 | Field | Type | Rules |
 |-------|------|-------|
 | `id` | INTEGER PK | Auto-increment |

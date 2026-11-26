@@ -4,7 +4,7 @@
 **Branch pattern:** `feature/3-mainaining-customers`  
 **Status:** Draft  
 **Created:** 11/23/2026 
-**Input:** This feature for is mainaining the customer of that runs the invoicing projects, so customers can see their info.
+**Input:** This feature is for maintaining the customer of that runs the invoicing projects, so customers can see their info.
 **Depends on:** [Feature X — …](feature-X-….md)  
 **Related:** optional links to ADRs or reference docs  
 

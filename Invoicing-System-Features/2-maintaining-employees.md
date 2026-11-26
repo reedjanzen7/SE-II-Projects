@@ -4,7 +4,7 @@
 **Branch pattern:** `feature/2-mainaining-the-employees`  
 **Status:** Draft  
 **Created:** 11/23/2026 
-**Input:** This feature for is mainaining the employees that work at the company.
+**Input:** This feature is for maintaining the employees that work at the company.
 **Depends on:** [Feature X — …](feature-X-….md)  
 **Related:** optional links to ADRs or reference docs  
 
